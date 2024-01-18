@@ -1,5 +1,6 @@
 import { FaFacebook, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import bannerImage from "../../../assets/anirban-a35639a7.jpg";
+import { Link } from "react-router-dom";
 const Banner = () => {
   return (
     <div className="mt-16">
@@ -33,24 +34,32 @@ const Banner = () => {
             <button className="bg-[#1abc9c] text-white font-bold  py-3 px-6 rounded-md text-sm tracking-[1px]">
               Download_Resume
             </button>
-            <button className="bg-[#1abc9c] bg-transparent text-gray-700 border-gray-200 hover:bg-slate-600 hover:text-gray-300 duration-500 dark:text-gray-300 border font-bold py-3 px-6 rounded-md text-sm tracking-[1px]">
-              Github
-            </button>
+            <Link to="https://github.com/Anirbandasjoy">
+              <button className="bg-[#1abc9c] bg-transparent text-gray-700 border-gray-200 hover:bg-slate-600 hover:text-gray-300 duration-500 dark:text-gray-300 border font-bold py-3 px-6 rounded-md text-sm tracking-[1px]">
+                Github
+              </button>
+            </Link>
           </div>
           <div className="flex items-center  gap-3 text-3xl">
-            <div className="hover:bg-gray-300 dark:hover:bg-gray-700 duration-500 cursor-pointer p-2 rounded-md">
-              <FaGithub />
-            </div>
-            <div className="hover:bg-gray-300 dark:hover:bg-gray-700 duration-500 cursor-pointer p-2 rounded-md">
-              <FaFacebook />
-            </div>
+            <Link to="https://github.com/Anirbandasjoy">
+              <div className="hover:bg-gray-300 dark:hover:bg-gray-700 duration-500 cursor-pointer p-2 rounded-md">
+                <FaGithub />
+              </div>
+            </Link>
+            <Link to="https://web.facebook.com/anirban.dasjoy">
+              <div className="hover:bg-gray-300 dark:hover:bg-gray-700 duration-500 cursor-pointer p-2 rounded-md">
+                <FaFacebook />
+              </div>
+            </Link>
             <div className="hover:bg-gray-300 dark:hover:bg-gray-700 duration-500 cursor-pointer p-2 rounded-md">
               <FaLinkedin />
             </div>
 
-            <div className="hover:bg-gray-300 dark:hover:bg-gray-700 duration-500 cursor-pointer p-2 rounded-md">
-              <FaWhatsapp />
-            </div>
+            <Link to="https://wa.link/t60z05">
+              <div className="hover:bg-gray-300 dark:hover:bg-gray-700 duration-500 cursor-pointer p-2 rounded-md">
+                <FaWhatsapp />
+              </div>
+            </Link>
           </div>
         </div>
       </div>
