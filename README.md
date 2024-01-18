@@ -1,3 +1,3 @@
 ## TechCanvas
 
-Visit my portfolio: [TechCanvas](https://anirbandas.surge.sh)
+### Visit my portfolio: [TechCanvas](https://joydas.vercel.app)
