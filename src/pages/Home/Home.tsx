@@ -1,84 +1,9 @@
+import Banner from "./Banner/Banner";
+
 const Home = () => {
   return (
     <div className="dark:text-white">
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
-      <h1>my Home Page</h1>
+      <Banner />
     </div>
   );
 };

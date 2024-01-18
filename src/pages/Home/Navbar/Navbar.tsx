@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
-import ToggoleBtn from "./ToggoleBtn/ToggoleBtn";
 import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
+import ToggoleBtn from "../../../components/ToggoleBtn/ToggoleBtn";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
