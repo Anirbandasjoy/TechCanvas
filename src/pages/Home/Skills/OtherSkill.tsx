@@ -17,7 +17,7 @@ const OtherSkill = () => {
           return (
             <div
               key={skil?.id}
-              className="bg-white dark:bg-slate-700 border gap-8   border-gray-300 py-5 px-4 w-full h-7 flex items-center"
+              className="bg-white dark:bg-slate-700 border gap-8   border-gray-300 dark:border-gray-500  py-5 px-4 w-full h-7 flex items-center"
             >
               <Line
                 trailWidth={2}
