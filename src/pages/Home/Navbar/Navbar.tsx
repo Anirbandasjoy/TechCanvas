@@ -7,26 +7,10 @@ import ToggoleBtn from "../../../components/ToggoleBtn/ToggoleBtn";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  //   useEffect(() => {
-  //     const handleScroll = () => {
-  //       if (isOpen) {
-  //         document.body.style.overflow = "hidden";
-  //       } else {
-  //         document.body.style.overflow = "auto";
-  //       }
-  //     };
-
-  //     window.addEventListener("scroll", handleScroll);
-
-  //     return () => {
-  //       window.removeEventListener("scroll", handleScroll);
-  //     };
-  //   }, [isOpen]);
-
   return (
     <div className="flex justify-between items-center z-30 py-3">
       <div>
-        <h1 className="text-[12px] sm:text-[16px] bg-[#1abc9c] p-2 px-3 rounded-md text-white font-bold">
+        <h1 className="text-[12px] sm:text-[16px] bg-[#1abc9c] p-2 px-3 rounded-md text-white font-[750] cursor-pointer">
           AJ
         </h1>
       </div>

@@ -5,11 +5,11 @@ const OtherSkill = () => {
   return (
     <div>
       <div className="flex items-center my-11">
-        <div className="w-full h-[1px] bg-gray-300"></div>
+        <div className="w-full h-[1px] bg-gray-300 dark:bg-gray-700"></div>
         <h1 className="font-bold tracking-[1px] bg-[#1abc9c] text-white text-xs sm:text-sm w-80 py-1 px-2 text-center  capitalize rounded-sm">
           OTHER SKILLS
         </h1>
-        <div className="w-full h-[1px] bg-gray-300"></div>
+        <div className="w-full h-[1px] bg-gray-300 dark:bg-gray-700"></div>
       </div>
 
       <div className="grid sm:grid-cols-2  sm:gap-6 gap-5 grid-cols-1 ">
