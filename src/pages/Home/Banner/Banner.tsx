@@ -31,11 +31,11 @@ const Banner = () => {
         </h3>
         <div className="mt-8 flex justify-between items-center flex-col sm:flex-row gap-7 sm:gap-0">
           <div className="space-x-2  text-center sm:text-left">
-            <button className="bg-[#1abc9c] text-white font-bold  py-3 px-6 rounded-md text-sm tracking-[1px]">
+            <button className="bg-[#1abc9c] text-white font-bold  py-3 px-6 rounded-md text-xs sm:text-sm tracking-[1px]">
               Download_Resume
             </button>
             <Link to="https://github.com/Anirbandasjoy">
-              <button className="bg-[#1abc9c] bg-transparent text-gray-700 border-gray-200 hover:bg-slate-600 hover:text-gray-300 duration-500 dark:text-gray-300 border font-bold py-3 px-6 rounded-md text-sm tracking-[1px]">
+              <button className="bg-[#1abc9c] bg-transparent text-gray-700 border-gray-200 hover:bg-slate-600 hover:text-gray-300 duration-500 dark:text-gray-300 border font-bold py-3 px-6 rounded-md text-xs sm:text-sm tracking-[1px]">
                 Github
               </button>
             </Link>
