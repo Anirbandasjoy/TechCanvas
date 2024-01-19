@@ -51,9 +51,11 @@ const Banner = () => {
                 <FaFacebook />
               </div>
             </Link>
-            <div className="hover:bg-gray-300 dark:hover:bg-gray-700 duration-500 cursor-pointer p-2 rounded-md">
-              <FaLinkedin />
-            </div>
+            <Link to="https://www.linkedin.com/in/joy-das-bb97642ab">
+              <div className="hover:bg-gray-300 dark:hover:bg-gray-700 duration-500 cursor-pointer p-2 rounded-md">
+                <FaLinkedin />
+              </div>
+            </Link>
 
             <Link to="https://wa.link/t60z05">
               <div className="hover:bg-gray-300 dark:hover:bg-gray-700 duration-500 cursor-pointer p-2 rounded-md">
