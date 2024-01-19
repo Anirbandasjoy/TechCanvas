@@ -23,8 +23,8 @@ const Banner = () => {
           </div>
         </div>
 
-        <h3 className="sm:mt-14 mt-6  text-sm text-justify text-gray-600 sm:text-[15px] w-5/6 mx-auto sm:mx-0  dark:text-gray-300">
-          Welcome to my portfolio! I am Jai Das, a passionate front-end
+        <h3 className="sm:mt-7 mt-6  text-sm text-justify text-gray-600 sm:text-[15px] w-5/6 mx-auto sm:mx-0  dark:text-gray-300">
+          Welcome to my portfolio! I am Joy Das, a passionate front-end
           developer with a strong focus on the MERN (MongoDB, Express.js, React,
           Node.js) stack. I am always ready to create attractive and
           user-friendly interface.
