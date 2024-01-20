@@ -21,9 +21,11 @@ const ProjectCart = () => {
               />
             </div>
             <div className="flex justify-between items-center px-4">
-              <h1 className="text-xl  sm:text-[21px] font-semibold text-gray-700 dark:text-gray-300">
-                {project?.name}
-              </h1>
+              <Link to={project?.preview}>
+                <h1 className="text-xl hover:text-[#1abc9c] dark:hover:text-[#1abc9c] duration-75 sm:text-[21px] font-semibold text-gray-700 dark:text-gray-300">
+                  {project?.name}
+                </h1>
+              </Link>
               <div className="flex items-start gap-4">
                 <Link to={project?.preview}>
                   <FiLink className="font-bold text-[21px] cursor-pointer hover:text-[#1abc9c] duration-100" />
@@ -40,7 +42,7 @@ const ProjectCart = () => {
               {project?.technologs.map((technology) => {
                 return (
                   <div key={technology?.id}>
-                    <h1 className="bg-[#1abc9c] font-bold rounded-r-md text-white py-[2px] px-[5px]">
+                    <h1 className="bg-[#1abc9c] cursor-pointer font-bold rounded-r-md text-white py-[2px] px-[5px]">
                       {technology?.technology}
                     </h1>
                   </div>
