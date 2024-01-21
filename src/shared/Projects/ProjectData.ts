@@ -10,6 +10,7 @@ export const projectsData = [
     projectVideo: video1,
     preview: "https://assignment12-848ad.web.app",
     source: "https://github.com/Anirbandasjoy/TouristTreasuresBD-Client",
+    path: "/touristtreasuresBD",
     technologs: [
       {
         id: 1,
@@ -41,6 +42,7 @@ export const projectsData = [
     projectVideo: video2,
     preview: "https://tour-sport.web.app",
     source: "https://github.com/Anirbandasjoy/tour-sport-client",
+    path: "/tour-sport",
     technologs: [
       {
         id: 1,
@@ -72,6 +74,7 @@ export const projectsData = [
     projectVideo: video3,
     preview: "https://joydas.vercel.app",
     source: "https://github.com/Anirbandasjoy/TechCanvas",
+    path: "/techcanvas",
     technologs: [
       {
         id: 1,

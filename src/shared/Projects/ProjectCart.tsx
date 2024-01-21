@@ -2,6 +2,7 @@ import { VscSourceControl } from "react-icons/vsc";
 import { projectsData } from "./ProjectData";
 import { FiLink } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import { IoBookmarkOutline } from "react-icons/io5";
 const ProjectCart = () => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -27,6 +28,9 @@ const ProjectCart = () => {
                 </h1>
               </Link>
               <div className="flex items-start gap-4">
+                <Link to={project?.path}>
+                  <IoBookmarkOutline className="font-bold text-[21px] cursor-pointer hover:text-[#1abc9c] duration-100" />
+                </Link>
                 <Link to={project?.preview}>
                   <FiLink className="font-bold text-[21px] cursor-pointer hover:text-[#1abc9c] duration-100" />
                 </Link>

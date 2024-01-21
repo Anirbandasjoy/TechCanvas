@@ -7,7 +7,7 @@ const Banner = () => {
       <div>
         <div className="flex sm:justify-between items-center flex-col-reverse sm:flex-row sm:items-end ">
           <div className="text-center mt-4 sm:mt-0 sm:text-start">
-            <h1 className="text-2xl sm:text-4xl font-bold tracking-[.2rem] text-gray-800 dark:text-gray-300">
+            <h1 className="text-2xl sm:text-4xl font-extrabold tracking-[.2rem] text-gray-800 dark:text-gray-300">
               Joy Das
             </h1>
             <p className="text-sm mt-1 sm:mt-2 tracking-[.2rem] font-semibold text-red-300 dark:text-red-300">
