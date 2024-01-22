@@ -8,7 +8,7 @@ const PageHeading = ({ title, subTitile }: PageHeadingProps) => {
       <h1 className="text-2xl font-extrabold text-gray-700 dark:text-gray-300 tracking-[1px] sm:text-4xl">
         {title}
       </h1>
-      <p className="text-xs leading-6 sm:leading-3 sm:text-[15px] dark:text-gray-300 text-gray-500">
+      <p className="text-xs sm:leading-6 leading-5 sm:text-[15px] dark:text-gray-300 text-gray-500">
         {subTitile}
       </p>
     </div>

@@ -3,32 +3,34 @@ import bannerImage from "../../../assets/anirban-a35639a7.jpg";
 import { Link } from "react-router-dom";
 const Banner = () => {
   return (
-    <div className="mt-16">
+    <div className="mt-10">
       <div>
-        <div className="flex sm:justify-between items-center flex-col-reverse sm:flex-row sm:items-end ">
-          <div className="text-center mt-4 sm:mt-0 sm:text-start">
-            <h1 className="text-2xl sm:text-4xl font-extrabold tracking-[.2rem] text-gray-800 dark:text-gray-300">
-              Joy Das
-            </h1>
-            <p className="text-sm mt-1 sm:mt-2 tracking-[.2rem] font-semibold text-red-300 dark:text-red-300">
-              Front-end Developer
-            </p>
+        <div className="flex sm:justify-between items-center flex-col-reverse sm:flex-row sm:items-start ">
+          <div className="text-center mt-4 space-y-3 w-full sm:w-5/6  sm:mt-0 sm:text-start">
+            <div>
+              <h1 className="text-2xl sm:text-4xl font-extrabold tracking-[.2rem] text-gray-800 dark:text-gray-300">
+                Joy Das
+              </h1>
+              <p className="text-[16px] mt-1 sm:mt-2 tracking-[1.5px] dark:text-gray-200 font-semibold text-gray-700">
+                Front-end Developer
+              </p>
+            </div>
+            <h3 className=" leading-5 text-sm text-justify text-gray-600 sm:text-[15px] w-5/6 mx-auto sm:mx-0  dark:text-gray-300">
+              Welcome to my portfolio! I am Joy Das, a passionate front-end
+              developer with a strong focus on the MERN (MongoDB, Express.js,
+              React, Node.js) stack. I am always ready to create attractive and
+              user-friendly interface.
+            </h3>
           </div>
           <div className="">
             <img
               src={bannerImage}
               alt="bannerImage"
-              className="w-32 rounded-md "
+              className="w-36  rounded-md "
             />
           </div>
         </div>
 
-        <h3 className="sm:mt-7 mt-6  text-sm text-justify text-gray-600 sm:text-[15px] w-5/6 mx-auto sm:mx-0  dark:text-gray-300">
-          Welcome to my portfolio! I am Joy Das, a passionate front-end
-          developer with a strong focus on the MERN (MongoDB, Express.js, React,
-          Node.js) stack. I am always ready to create attractive and
-          user-friendly interface.
-        </h3>
         <div className="mt-8 flex justify-between items-center flex-col sm:flex-row gap-7 sm:gap-0">
           <div className="space-x-2  text-center sm:text-left">
             <Link to="https://drive.google.com/uc?export=download&id=1AnMRiz579tV8F9xf-U3WIiVgzHiRhcn7">
