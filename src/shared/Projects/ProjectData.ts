@@ -84,6 +84,10 @@ export const projectsData = [
         id: 2,
         technology: "TailwindCSS",
       },
+      {
+        id: 3,
+        technology: "TypeScript",
+      },
     ],
   },
 ];
