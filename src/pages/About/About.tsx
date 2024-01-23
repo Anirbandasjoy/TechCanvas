@@ -5,7 +5,7 @@ const About = () => {
     <div className="my-10">
       <PageHeading
         title="About Me"
-        subTitile="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod exercitationem illum quo quas, consectetur distinctio quae reiciendis praesentium sequi dolore alias odio necessitatibus et ipsa repellendus at a rem pariatur!20"
+        subTitile="As a front-end developer, I can play an important role in creating attractive, user-friendly interfaces that bring websites to life. My skills in HTML, CSS, JavaScript, TypeScript, and React are the building blocks that transform design ideas into interactive and visually appealing digital experiences.I am studying in Moulvibazar Polytechnic Institute, Department of Computer Science & Technology."
       />
     </div>
   );

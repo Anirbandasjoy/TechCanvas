@@ -1,5 +1,6 @@
 import { FiSend } from "react-icons/fi";
 import PageHeading from "../../components/PageHeading/PageHeading";
+import ContactCards from "../../components/ContactInfo/ContactCards";
 
 const Contact = () => {
   const handleMessage = (e: React.FormEvent<HTMLFormElement>) => {
@@ -10,7 +11,7 @@ const Contact = () => {
     <div className="mt-10 mb-10">
       <PageHeading
         title="Contact Me"
-        subTitile="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem odit reprehenderit provident voluptate reiciendis maiores aliquid nobis iure facere culpa?"
+        subTitile="To contact me, fill the form below and click the send message button. Or you can email or call me directly. Below you will find my email and phone number"
       />
 
       <div className="mt-10">
@@ -60,6 +61,10 @@ const Contact = () => {
             <FiSend />
           </div>
         </form>
+      </div>
+
+      <div className="mt-24">
+        <ContactCards />
       </div>
     </div>
   );
