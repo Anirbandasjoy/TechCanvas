@@ -7,6 +7,7 @@ import ProjectTwoPage from "../shared/Projects/ProjectDetails/ProjectTwoPage";
 import ProjectThreePage from "../shared/Projects/ProjectDetails/ProjectThreePage";
 import Portfolio from "../pages/Portfolio/Portfolio";
 import About from "../pages/About/About";
+import Contact from "../pages/Contact/Contact";
 
 export const router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ export const router = createBrowserRouter([
       {
         path: "about",
         element: About(),
+      },
+      {
+        path: "contact",
+        element: Contact(),
       },
     ],
   },
