@@ -6,3 +6,13 @@
 body {
   font-family: "Nunito Sans", sans-serif;
 }
+
+.custom-swal-title {
+  font-size: 25px;
+}
+
+@media screen and (max-width: 5576px) {
+  .custom-swal-title {
+    font-size: 20px;
+  }
+}

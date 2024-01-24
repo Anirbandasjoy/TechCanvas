@@ -29,13 +29,13 @@ const ProjectCart = () => {
               </Link>
               <div className="flex items-start gap-4">
                 <Link to={project?.path}>
-                  <IoBookmarkOutline className="font-bold text-[21px] cursor-pointer hover:text-[#1abc9c] duration-100" />
+                  <IoBookmarkOutline className="font-bold dark:text-white dark:hover:text-[#1abc9c] text-[21px] cursor-pointer hover:text-[#1abc9c] duration-100" />
                 </Link>
                 <Link to={project?.preview}>
-                  <FiLink className="font-bold text-[21px] cursor-pointer hover:text-[#1abc9c] duration-100" />
+                  <FiLink className="font-bold dark:text-white dark:hover:text-[#1abc9c] text-[21px] cursor-pointer hover:text-[#1abc9c] duration-100" />
                 </Link>
                 <Link to={project?.source}>
-                  <VscSourceControl className="font-bold text-[21px] cursor-pointer hover:text-[#1abc9c] duration-100" />
+                  <VscSourceControl className="font-bold dark:text-white dark:hover:text-[#1abc9c] text-[21px] cursor-pointer hover:text-[#1abc9c] duration-100" />
                 </Link>
               </div>
             </div>

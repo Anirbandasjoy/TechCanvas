@@ -10,9 +10,12 @@ const Navbar = () => {
   return (
     <div className="flex justify-between items-center z-30 py-3">
       <div>
-        <h1 className="text-[12px] sm:text-[16px] bg-[#1abc9c] p-2 px-3 rounded-md text-white font-[750] cursor-pointer">
+        <Link
+          to="/"
+          className="text-[12px] sm:text-[16px] bg-[#1abc9c] p-2 px-3 rounded-md text-white font-[750] cursor-pointer"
+        >
           AJ
-        </h1>
+        </Link>
       </div>
       {/* dasktop navbar */}
       <div className="hidden sm:block">

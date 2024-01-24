@@ -1,11 +1,24 @@
 import { FiSend } from "react-icons/fi";
 import PageHeading from "../../components/PageHeading/PageHeading";
 import ContactCards from "../../components/ContactInfo/ContactCards";
-
+import Swal from "sweetalert2";
+// import image from "../../assets/anirban-a35639a7.jpg";
 const Contact = () => {
   const handleMessage = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    alert("Message Sent Successfully");
+
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      color: "#1abc9c",
+      title: "Message Sent Successfully",
+      showConfirmButton: false,
+      timer: 1500,
+      backdrop: "rgba(26, 188, 156, .3)",
+      customClass: {
+        title: "custom-swal-title",
+      },
+    });
   };
   return (
     <div className="mt-10 mb-10">
@@ -56,10 +69,13 @@ const Contact = () => {
               placeholder="Message"
             ></textarea>
           </div>
-          <div className="py-2 px-3 w-full rounded-md bg-[#1abc9c] text-white  flex items-center justify-center gap-1 cursor-pointer">
-            <button className=" font-bold">Send Message</button>
+          <button
+            type="submit"
+            className="py-2 px-3 w-full rounded-md bg-[#1abc9c] text-white  flex items-center justify-center gap-1 cursor-pointer"
+          >
+            <span className="font-bold">Send Message</span>
             <FiSend />
-          </div>
+          </button>
         </form>
       </div>
 
