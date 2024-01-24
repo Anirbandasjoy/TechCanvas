@@ -21,7 +21,7 @@ const ContactCard = ({
         </h1>
         <Link
           to={source}
-          className="hover:text-[#1abc9c] dark:text-gray-300 duration-100"
+          className="hover:text-[#1abc9c] dark:hover:text-[#1abc9c] dark:text-gray-300 duration-100"
         >
           {contactSource}
         </Link>
