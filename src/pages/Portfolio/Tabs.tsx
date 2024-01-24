@@ -9,7 +9,6 @@ const Tabs = () => {
         <Tab.List className="space-x-2">
           <Tab className="outline-none rounded-sm">
             {({ selected }) => (
-              /* Use the `selected` state to conditionally style the selected tab. */
               <button
                 className={
                   selected
@@ -23,7 +22,6 @@ const Tabs = () => {
           </Tab>
           <Tab className="outline-none rounded-sm">
             {({ selected }) => (
-              /* Use the `selected` state to conditionally style the selected tab. */
               <button
                 className={
                   selected
@@ -37,7 +35,6 @@ const Tabs = () => {
           </Tab>
           <Tab className="outline-none rounded-sm">
             {({ selected }) => (
-              /* Use the `selected` state to conditionally style the selected tab. */
               <button
                 className={
                   selected
@@ -63,7 +60,7 @@ const Tabs = () => {
             </div>
           </Tab.Panel>
           <Tab.Panel>
-            <div className="mt-10">
+            <div className="mt-10  lg:h-[calc(100vh-400px)] xl:h-[calc(100vh-471px)] md:h-[calc(100vh-200px)] h-[calc(100vh-300px)]">
               <div className="space-y-2 sm:h-52 h-40 flex bg-red-500 w-full flex-col justify-center items-center">
                 <BiErrorAlt className="text-white text-3xl mx-auto" />
                 <h1 className="text-lg text-white">Not Found Application</h1>
