@@ -19,6 +19,8 @@ const ProjectCart = () => {
                 loop
                 autoPlay
                 muted
+                controls
+                controlsList="nodownload"
               />
             </div>
             <div className="flex justify-between items-center px-4">
