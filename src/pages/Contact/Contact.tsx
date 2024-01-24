@@ -31,12 +31,6 @@ const Contact = () => {
         <form className="space-y-4" onSubmit={handleMessage}>
           <div className="flex items-center flex-col sm:flex-row gap-5">
             <div className="flex flex-col gap-1 w-full">
-              {/* <label
-                className="text-sm text-gray-400 dark:text-gray-300 font-bold"
-                htmlFor="fullName"
-              >
-                Full Name
-              </label> */}
               <input
                 type="text"
                 name="fullName"
@@ -46,12 +40,6 @@ const Contact = () => {
               />
             </div>
             <div className="flex flex-col gap-1 w-full">
-              {/* <label
-                className="text-sm text-gray-400 dark:text-gray-300 font-bold"
-                htmlFor="email"
-              >
-                Email
-              </label> */}
               <input
                 type="text"
                 name="email"
@@ -78,8 +66,14 @@ const Contact = () => {
           </button>
         </form>
       </div>
-
-      <div className="mt-24">
+      <div className="my-10 sm:my-12 flex items-center gap-2">
+        <div className="w-full h-[1px] bg-gray-300 dark:bg-gray-700"></div>
+        <h1 className="dark:text-gray-300 text-gray-700 italic font-semibold">
+          OR
+        </h1>
+        <div className="w-full h-[1px] bg-gray-300 dark:bg-gray-700"></div>
+      </div>
+      <div className="">
         <ContactCards />
       </div>
     </div>
