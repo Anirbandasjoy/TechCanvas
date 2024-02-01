@@ -6,6 +6,8 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
+import { useState } from "react";
+import { FcProcess } from "react-icons/fc";
 
 const service_id = import.meta.env.VITE_SERVICE_ID;
 const templete_id = import.meta.env.VITE_TEMPLETE_ID;
@@ -25,6 +27,7 @@ const schema = yup
   })
   .required();
 const Contact = () => {
+  const [loading, setLoading] = useState(false);
   const {
     register,
     handleSubmit,
@@ -34,10 +37,7 @@ const Contact = () => {
     resolver: yupResolver(schema),
   });
   const onSubmit: SubmitHandler<FormTypes> = async (data) => {
-    console.log({ fullname: data.fullName });
-    console.log({ email: data.email });
-    console.log({ message: data.message });
-
+    setLoading(true);
     const templateParams = {
       to_name: "Joy Das",
       from_name: data.fullName,
@@ -45,7 +45,8 @@ const Contact = () => {
     };
 
     await emailjs.send(service_id, templete_id, templateParams, user_id);
-
+    reset();
+    setLoading(false);
     Swal.fire({
       position: "center",
       icon: "success",
@@ -58,7 +59,6 @@ const Contact = () => {
         title: "custom-swal-title",
       },
     });
-    reset();
   };
 
   return (
@@ -109,7 +109,10 @@ const Contact = () => {
             className="py-2 px-3 w-full rounded-md bg-[#1abc9c] text-white  flex items-center justify-center gap-1 cursor-pointer"
           >
             <span className="font-bold">Send Message</span>
-            <FiSend />
+            {!loading && <FiSend />}
+            {loading && (
+              <FcProcess className="text-red-500 text-[20px] animate-spin" />
+            )}
           </button>
         </form>
       </div>
