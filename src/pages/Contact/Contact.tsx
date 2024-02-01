@@ -12,7 +12,7 @@ import { FcProcess } from "react-icons/fc";
 const service_id = import.meta.env.VITE_SERVICE_ID;
 const templete_id = import.meta.env.VITE_TEMPLETE_ID;
 const user_id = import.meta.env.VITE_USER_ID;
-
+// form value
 type FormTypes = {
   fullName: string;
   email: string;
