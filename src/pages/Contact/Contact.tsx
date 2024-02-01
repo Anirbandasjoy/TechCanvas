@@ -9,9 +9,9 @@ import Swal from "sweetalert2";
 import { useState } from "react";
 import { FcProcess } from "react-icons/fc";
 
-const service_id = import.meta.env.VITE_SERVICE_ID;
-const templete_id = import.meta.env.VITE_TEMPLETE_ID;
-const user_id = import.meta.env.VITE_USER_ID;
+// const service_id = import.meta.env.VITE_SERVICE_ID;
+// const templete_id = import.meta.env.VITE_TEMPLETE_ID;
+// const user_id = import.meta.env.VITE_USER_ID;
 // form value
 type FormTypes = {
   fullName: string;
@@ -44,7 +44,12 @@ const Contact = () => {
       message: data.message,
     };
 
-    await emailjs.send(service_id, templete_id, templateParams, user_id);
+    await emailjs.send(
+      "service_s2hp5o7",
+      "template_erwd4bc",
+      templateParams,
+      "xSEe7la1zqBTUvqYT"
+    );
     reset();
     setLoading(false);
     Swal.fire({
