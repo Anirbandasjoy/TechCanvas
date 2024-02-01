@@ -48,7 +48,7 @@ const Contact = () => {
       "service_s2hp5o7",
       "template_erwd4bc",
       templateParams,
-      "xSEe7la1zqBTUvqYT"
+      "MdpX-x77UpjkL0ENt"
     );
     reset();
     setLoading(false);
