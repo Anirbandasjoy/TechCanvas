@@ -13,35 +13,35 @@ export const router = createBrowserRouter([
   {
     path: "/",
     element: MainLayout(),
-    errorElement: NotFoundPage(),
+    errorElement: <NotFoundPage />,
     children: [
       {
         index: true,
-        element: Home(),
+        element: <Home />,
       },
       {
         path: "touristtreasuresBD",
-        element: ProjectOne(),
+        element: <ProjectOne />,
       },
       {
         path: "tour-sport",
-        element: ProjectTwoPage(),
+        element: <ProjectTwoPage />,
       },
       {
         path: "techcanvas",
-        element: ProjectThreePage(),
+        element: <ProjectThreePage />,
       },
       {
         path: "portfolio",
-        element: Portfolio(),
+        element: <Portfolio />,
       },
       {
         path: "about",
-        element: About(),
+        element: <About />,
       },
       {
         path: "contact",
-        element: Contact(),
+        element: <Contact />,
       },
     ],
   },

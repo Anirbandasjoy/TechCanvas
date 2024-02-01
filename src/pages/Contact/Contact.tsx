@@ -1,11 +1,50 @@
 import { FiSend } from "react-icons/fi";
 import PageHeading from "../../components/PageHeading/PageHeading";
 import ContactCards from "../../components/ContactInfo/ContactCards";
+import { SubmitHandler, useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
+import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
-// import image from "../../assets/anirban-a35639a7.jpg";
+
+const service_id = import.meta.env.VITE_SERVICE_ID;
+const templete_id = import.meta.env.VITE_TEMPLETE_ID;
+const user_id = import.meta.env.VITE_USER_ID;
+
+type FormTypes = {
+  fullName: string;
+  email: string;
+  message: string;
+};
+
+const schema = yup
+  .object({
+    fullName: yup.string().required(),
+    email: yup.string().required().email(),
+    message: yup.string().required(),
+  })
+  .required();
 const Contact = () => {
-  const handleMessage = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm<FormTypes>({
+    resolver: yupResolver(schema),
+  });
+  const onSubmit: SubmitHandler<FormTypes> = async (data) => {
+    console.log({ fullname: data.fullName });
+    console.log({ email: data.email });
+    console.log({ message: data.message });
+
+    const templateParams = {
+      to_name: "Joy Das",
+      from_name: data.fullName,
+      message: data.message,
+    };
+
+    await emailjs.send(service_id, templete_id, templateParams, user_id);
 
     Swal.fire({
       position: "center",
@@ -19,7 +58,9 @@ const Contact = () => {
         title: "custom-swal-title",
       },
     });
+    reset();
   };
+
   return (
     <div className="mt-10 mb-10">
       <PageHeading
@@ -28,34 +69,40 @@ const Contact = () => {
       />
 
       <div className="mt-10">
-        <form className="space-y-4" onSubmit={handleMessage}>
+        <form className="space-y-4" onSubmit={handleSubmit(onSubmit)}>
           <div className="flex items-center flex-col sm:flex-row gap-5">
             <div className="flex flex-col gap-1 w-full">
               <input
                 type="text"
-                name="fullName"
-                id="fullName"
                 placeholder="Full Name "
                 className="py-3 bg-gray-200 px-3  border-gray-300 border dark:text-white dark:bg-gray-800  dark:border-gray-600  outline-none text-sm rounded-md"
+                {...register("fullName")}
               />
+              <p className="text-red-500 text-xs dark:text-red-400 font-semibold">
+                {errors.fullName?.message}
+              </p>
             </div>
             <div className="flex flex-col gap-1 w-full">
               <input
                 type="text"
-                name="email"
-                id="email"
+                {...register("email")}
                 placeholder="Email"
                 className="py-3 bg-gray-200 px-3  border-gray-300 border dark:text-white dark:bg-gray-800  dark:border-gray-600  outline-none text-sm rounded-md"
               />
+              <p className="text-red-500 text-xs dark:text-red-400 font-semibold">
+                {errors.email?.message}
+              </p>
             </div>
           </div>
           <div>
             <textarea
               className="py-5 bg-gray-200 px-5  border-gray-300 border  dark:text-white dark:bg-gray-800 dark:border-gray-600  outline-none text-sm rounded-md w-full h-52"
-              name="message"
-              id="message"
+              {...register("message")}
               placeholder="Message"
             ></textarea>
+            <p className="text-red-500 text-xs dark:text-red-400 font-semibold">
+              {errors.message?.message}
+            </p>
           </div>
           <button
             type="submit"
