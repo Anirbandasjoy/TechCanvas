@@ -80,7 +80,7 @@ const Contact = () => {
               <input
                 type="text"
                 placeholder="Full Name "
-                className="py-3 bg-gray-200 px-3  border-gray-300 border dark:text-white dark:bg-gray-800  dark:border-gray-600  outline-none text-sm rounded-md"
+                className="py-3 bg-[#ecf0f1] px-3  border-gray-300 border dark:text-white dark:bg-gray-800  dark:border-gray-600  outline-none text-sm rounded-md"
                 {...register("fullName")}
               />
               <p className="text-red-500 text-xs dark:text-red-400 font-semibold">
@@ -92,7 +92,7 @@ const Contact = () => {
                 type="text"
                 {...register("email")}
                 placeholder="Email"
-                className="py-3 bg-gray-200 px-3  border-gray-300 border dark:text-white dark:bg-gray-800  dark:border-gray-600  outline-none text-sm rounded-md"
+                className="py-3 bg-[#ecf0f1] px-3  border-gray-300 border dark:text-white dark:bg-gray-800  dark:border-gray-600  outline-none text-sm rounded-md"
               />
               <p className="text-red-500 text-xs dark:text-red-400 font-semibold">
                 {errors.email?.message}
@@ -101,7 +101,7 @@ const Contact = () => {
           </div>
           <div>
             <textarea
-              className="py-5 bg-gray-200 px-5  border-gray-300 border  dark:text-white dark:bg-gray-800 dark:border-gray-600  outline-none text-sm rounded-md w-full h-52"
+              className="py-5 bg-[#ecf0f1] px-5 resize-none  border-gray-300 border  dark:text-white dark:bg-gray-800 dark:border-gray-600  outline-none text-sm rounded-md w-full h-52"
               {...register("message")}
               placeholder="Message"
             ></textarea>
