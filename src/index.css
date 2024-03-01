@@ -16,3 +16,116 @@ body {
     font-size: 20px;
   }
 }
+
+.projectCard1 {
+  animation-name: picthureChnage;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  animation-direction: alternate;
+}
+
+@keyframes picthureChnage {
+  0% {
+    background-image: url("./assets/images/4.png");
+  }
+  25% {
+    background-image: url("./assets/images/7.png");
+  }
+  50% {
+    background-image: url("./assets/images/8.png");
+  }
+  75% {
+    background-image: url("./assets/images/9.png");
+  }
+  100% {
+    background-image: url("./assets/images/thank.jpg");
+  }
+}
+
+.projectCard2 {
+  animation-name: picthureChnage2;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+@keyframes picthureChnage2 {
+  0% {
+    background-image: url("./assets/images/1.png");
+  }
+  25% {
+    background-image: url("./assets/images/2.png");
+  }
+  50% {
+    background-image: url("./assets/images/3.png");
+  }
+  75% {
+    background-image: url("./assets/images/4.png");
+  }
+  100% {
+    background-image: url("./assets/images/thank.jpg");
+  }
+}
+
+.projectCard3 {
+  animation-name: picthureChnage2;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+@keyframes picthureChnage3 {
+  0% {
+    background-image: url("./assets/images/1.png");
+  }
+  25% {
+    background-image: url("./assets/images/2.png");
+  }
+  50% {
+    background-image: url("./assets/images/3.png");
+  }
+  75% {
+    background-image: url("./assets/images/4.png");
+  }
+  100% {
+    background-image: url("./assets/images/thank.jpg");
+  }
+}
+
+.projectCard4 {
+  animation-name: picthureChnage4;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+@keyframes picthureChnage4 {
+  0% {
+    background-image: url("./assets/images/13.png");
+  }
+  25% {
+    background-image: url("./assets/images/14.png");
+  }
+  50% {
+    background-image: url("./assets/images/15.png");
+  }
+  75% {
+    background-image: url("./assets/images/16.png");
+  }
+  100% {
+    background-image: url("./assets/images/thank.jpg");
+  }
+}

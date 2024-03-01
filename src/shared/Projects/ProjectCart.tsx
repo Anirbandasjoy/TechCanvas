@@ -2,7 +2,8 @@ import { VscSourceControl } from "react-icons/vsc";
 import { projectsData } from "./ProjectData";
 import { FiLink } from "react-icons/fi";
 import { Link } from "react-router-dom";
-import { IoBookmarkOutline } from "react-icons/io5";
+import { LuBookOpen } from "react-icons/lu";
+
 const ProjectCart = () => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -12,14 +13,8 @@ const ProjectCart = () => {
             key={project?.id}
             className="space-y-5 flex-1  bg-white dark:bg-slate-700 dark:border-gray-500  dark:border pb-8 shadow-sm"
           >
-            <div className="w-full   overflow-hidden dark:border-b-2 dark:border-b-gray-500">
-              <video
-                src={project?.projectVideo}
-                className="w-full h-full "
-                loop
-                autoPlay
-                muted
-              />
+            <div className="w-full overflow-hidden dark:border-b-2 dark:border-b-gray-500">
+              <img src={project?.projectVideo} className="w-full h-full" />
             </div>
             <div className="flex justify-between items-center px-4">
               <Link to={project?.preview}>
@@ -29,7 +24,7 @@ const ProjectCart = () => {
               </Link>
               <div className="flex items-start gap-4">
                 <Link to={project?.path}>
-                  <IoBookmarkOutline className="font-bold dark:text-white dark:hover:text-[#1abc9c] text-[21px] cursor-pointer hover:text-[#1abc9c] duration-100" />
+                  <LuBookOpen className="font-bold dark:text-white dark:hover:text-[#1abc9c] text-[21px] cursor-pointer hover:text-[#1abc9c] duration-100" />
                 </Link>
                 <Link to={project?.preview}>
                   <FiLink className="font-bold dark:text-white dark:hover:text-[#1abc9c] text-[21px] cursor-pointer hover:text-[#1abc9c] duration-100" />

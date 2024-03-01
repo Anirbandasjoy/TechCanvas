@@ -8,6 +8,7 @@ import ProjectThreePage from "../shared/Projects/ProjectDetails/ProjectThreePage
 import Portfolio from "../pages/Portfolio/Portfolio";
 import About from "../pages/About/About";
 import Contact from "../pages/Contact/Contact";
+import ProjectsFoure from "../shared/Projects/ProjectDetails/ProjectsFoure";
 
 export const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ export const router = createBrowserRouter([
       {
         path: "techcanvas",
         element: <ProjectThreePage />,
+      },
+      {
+        path: "novanexus",
+        element: <ProjectsFoure />,
       },
       {
         path: "portfolio",
