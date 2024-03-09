@@ -75,7 +75,7 @@ body {
 }
 
 .projectCard3 {
-  animation-name: picthureChnage2;
+  animation-name: picthureChnage3;
   animation-duration: 10s;
   animation-iteration-count: infinite;
   background-size: cover;
@@ -86,16 +86,16 @@ body {
 
 @keyframes picthureChnage3 {
   0% {
-    background-image: url("./assets/images/1.png");
+    background-image: url("./assets/images/11.png");
   }
   25% {
-    background-image: url("./assets/images/2.png");
+    background-image: url("./assets/images/10.png");
   }
   50% {
-    background-image: url("./assets/images/3.png");
+    background-image: url("./assets/images/11.png");
   }
   75% {
-    background-image: url("./assets/images/4.png");
+    background-image: url("./assets/images/10.png");
   }
   100% {
     background-image: url("./assets/images/thank.jpg");
