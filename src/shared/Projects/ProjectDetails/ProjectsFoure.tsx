@@ -39,7 +39,7 @@ const ProjectsFoure = () => {
           you want, you can save posts made by others. This website has an admin
           dashboard which only admin can access. There is an option to manage
           users and manage posted news from the dashboard. Admin can see all the
-          information through the chart
+          information through the chart.
         </p>
       </div>
       <div className="mt-20">
@@ -59,7 +59,7 @@ const ProjectsFoure = () => {
                 read on a post and there is a process to visit the profile of
                 the user who has liked and commented. Users can share news posts
                 on WhatsApp, Linkedin, Facebook and other social media if they
-                want
+                want.
               </p>
             </li>
             <li className="space-y-1 dark:text-gray-200">
@@ -69,7 +69,7 @@ const ProjectsFoure = () => {
               <p className="text-xs sm:text-[16px] leading-6  dark:text-gray-300 text-gray-600">
                 There is this system where users can post news if they want.
                 There must be a login for that. And user can save any news.
-                Later he can easily see the news
+                Later he can easily see the news.
               </p>
             </li>
             <li className="space-y-1 dark:text-gray-200">
@@ -80,7 +80,7 @@ const ProjectsFoure = () => {
                 A user will have his own profile which he can visit himself or
                 someone else. Users can set and update their own profile name,
                 profile image, background image. The user's own posts will
-                appear on his profile page
+                appear on his profile page.
               </p>
             </li>
             <li className="space-y-1 dark:text-gray-200">
@@ -91,11 +91,23 @@ const ProjectsFoure = () => {
                 There is a separate dashboard for admin. Admin can perform
                 different functions including manage user manage news. Like he
                 can verify any user if he wants. There is a system of removal.
-                Anyone can remove news
+                Anyone can remove news.
               </p>
             </li>
           </ul>
         </div>
+      </div>
+      <div className="mt-20 space-y-6">
+        <div className="">
+          <h1 className="text-[22px] font-extrabold text-gray-700 dark:text-gray-300 tracking-[1px]">
+            Future plans
+          </h1>
+        </div>
+        <p className="text-xs sm:text-[16px] leading-6  dark:text-gray-300 text-gray-600">
+          In this project I will use data structures and algorithms in the
+          backend for performance optimization at the next stage. To make the
+          operation of the website faster.
+        </p>
       </div>
       <div className="mt-20">
         <h1 className="text-[22px] font-extrabold text-gray-700 dark:text-gray-300 tracking-[1px]">
