@@ -47,7 +47,7 @@ const ProjectsFoure = () => {
           Key Features
         </h1>
         <div className="mt-8">
-          <ul className=" list-decimal ml-6 space-y-10">
+          <ul className=" list-decimal ml-6 space-y-7">
             <li className="space-y-1 dark:text-gray-200  ">
               <h1 className="sm:text-[17px] text-[16px] font-bold text-gray-700 dark:text-gray-300 tracking-[1px]">
                 Like comment and share system on the news post :
