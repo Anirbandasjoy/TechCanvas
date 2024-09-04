@@ -11,14 +11,6 @@ const ProjectOne = () => {
       />
       <div className="w-full sm:h-96 h-52 bg-cover mt-4 overflow-hidden dark:border-b-2  dark:border-b-gray-500">
         <div className="w-full bg-cover h-full  projectCard1 "></div>
-        {/* <video
-          src={projectVideo}
-          className="w-full h-full"
-          loop
-          autoPlay
-          muted
-          controlsList="nodownload"
-        /> */}
       </div>
       <div className="my-7">
         <ProjectTItle

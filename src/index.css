@@ -129,3 +129,31 @@ body {
     background-image: url("./assets/images/thank.jpg");
   }
 }
+
+.projectCard5 {
+  animation-name: picthureChnage5;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+@keyframes picthureChnage5 {
+  0% {
+    background-image: url("./assets/images/stay.png");
+  }
+  25% {
+    background-image: url("./assets/images/stay1.png");
+  }
+  50% {
+    background-image: url("./assets/images/stay3.png");
+  }
+  75% {
+    background-image: url("./assets/images/stay4.png");
+  }
+  100% {
+    background-image: url("./assets/images/stay5.png");
+  }
+}

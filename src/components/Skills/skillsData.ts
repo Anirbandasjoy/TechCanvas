@@ -22,12 +22,12 @@ export const skillData = [
   {
     id: 5,
     technology: "JavaScript",
-    percent: 80,
+    percent: 90,
   },
   {
     id: 6,
     technology: "TypeScript",
-    percent: 60,
+    percent: 80,
   },
   {
     id: 7,
@@ -36,13 +36,13 @@ export const skillData = [
   },
   {
     id: 8,
-    technology: "Redux",
-    percent: 60,
+    technology: "Redux Toolkit",
+    percent: 70,
   },
   {
     id: 9,
     technology: "Next.JS",
-    percent: 60,
+    percent: 70,
   },
   {
     id: 10,

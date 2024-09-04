@@ -13,7 +13,7 @@ const ProjectCart = () => {
             key={project?.id}
             className="space-y-5 flex-1  bg-white dark:bg-slate-700 dark:border-gray-500  dark:border pb-8 shadow-sm"
           >
-            <div className="w-full overflow-hidden dark:border-b-2 dark:border-b-gray-500">
+            <div className="w-full overflow-hidden dark:border-b-2 h-[200px] dark:border-b-gray-500">
               <img src={project?.projectVideo} className="w-full h-full" />
             </div>
             <div className="flex justify-between items-center px-4">
