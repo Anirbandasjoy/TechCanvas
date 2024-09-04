@@ -36,6 +36,10 @@ export const projectsData = [
       },
       {
         id: 6,
+        technology: "Passport.js",
+      },
+      {
+        id: 7,
         technology: "MongoDB",
       },
     ],

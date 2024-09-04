@@ -37,6 +37,47 @@ const StayManagerProject = () => {
           and users can see and like and comment.
         </p>
       </div>
+
+      <div className="mt-20">
+        <h1 className="text-[22px]  font-extrabold text-gray-700 dark:text-gray-300 tracking-[1px]">
+          Authntication
+        </h1>
+        <ul className=" list-decimal ml-6 mt-6 space-y-7">
+          <li className="space-y-1 dark:text-gray-200">
+            <h1 className="sm:text-[17px] text-[16px] font-bold text-gray-700 dark:text-gray-300 tracking-[1px]">
+              Email & password:
+            </h1>
+            <p className="text-xs sm:text-[16px] leading-6  dark:text-gray-300 text-gray-600">
+              Email & password authtication create user cookie.
+            </p>
+          </li>
+          <li className="space-y-1 dark:text-gray-200">
+            <h1 className="sm:text-[17px] text-[16px] font-bold text-gray-700 dark:text-gray-300 tracking-[1px]">
+              Google & Github
+            </h1>
+            <p className="text-xs sm:text-[16px] leading-6  dark:text-gray-300 text-gray-600">
+              google & github use Authntication use Passport.js
+            </p>
+          </li>
+          <li className="space-y-1 dark:text-gray-200">
+            <h1 className="sm:text-[17px] text-[16px] font-bold text-gray-700 dark:text-gray-300 tracking-[1px]">
+              Admin email:
+            </h1>
+            <p className="text-xs sm:text-[16px] leading-6  dark:text-gray-300 text-gray-600">
+              admin@gmail.com
+            </p>
+          </li>
+          <li className="space-y-1 dark:text-gray-200">
+            <h1 className="sm:text-[17px] text-[16px] font-bold text-gray-700 dark:text-gray-300 tracking-[1px]">
+              Admin password:
+            </h1>
+            <p className="text-xs sm:text-[16px] leading-6  dark:text-gray-300 text-gray-600">
+              12345A@
+            </p>
+          </li>
+        </ul>
+      </div>
+
       <div className="mt-20">
         <h1 className="text-[22px] font-extrabold text-gray-700 dark:text-gray-300 tracking-[1px]">
           Key Features
