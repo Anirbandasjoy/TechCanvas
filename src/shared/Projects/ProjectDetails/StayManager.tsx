@@ -48,7 +48,7 @@ const StayManagerProject = () => {
               Email & password:
             </h1>
             <p className="text-xs sm:text-[16px] leading-6  dark:text-gray-300 text-gray-600">
-              Email & password authtication create user cookie.
+              Email & password Authntication create user cookie.
             </p>
           </li>
           <li className="space-y-1 dark:text-gray-200">
@@ -56,7 +56,7 @@ const StayManagerProject = () => {
               Google & Github
             </h1>
             <p className="text-xs sm:text-[16px] leading-6  dark:text-gray-300 text-gray-600">
-              google & github use Authntication use Passport.js
+              google & github use Authntication use Cookie Passport.js
             </p>
           </li>
           <li className="space-y-1 dark:text-gray-200">
