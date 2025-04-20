@@ -19,9 +19,9 @@ const ContactCards = () => {
       />
       <ContactCard
         Icon={IoLocationOutline}
-        source="mailto:joy600508@gmail.com"
+        source="#"
         contactTitle="Address"
-        contactSource="Derai, Sylhet, Bangladesh"
+        contactSource="Moulvibazar, Sylhet, Bangladesh"
       />
     </div>
   );

@@ -5,7 +5,7 @@ const About = () => {
     <div className="my-10">
       <PageHeading
         title="About Me"
-        subTitile="As a front-end developer, I can play an important role in creating attractive, user-friendly interfaces that bring websites to life. My skills in HTML, CSS, JavaScript, TypeScript, and React are the building blocks that transform design ideas into interactive and visually appealing digital experiences.I am studying in Moulvibazar Polytechnic Institute, Department of Computer Science & Technology."
+        subTitile="I am a Web Application Developer with a strong focus on delivering efficient and effective web solutions. I’m passionate about solving real-world problems through clean, scalable code and always strive to create better, smarter, and user-friendly applications that make a difference."
       />
       <div className="mt-20 space-y-6">
         <div className="flex items-center flex-col sm:flex-row gap-3">
@@ -24,26 +24,32 @@ const About = () => {
           programming from YouTube after hearing from my elder brothers. Then I
           follow many playlists like Anisul Islam, Sumit Saha. Then complete my
           Programming Hero Level 1 web development course. This was my journey
-          to start programming in short
+          to start programming in short.
         </p>
       </div>
       <div className="mt-20">
-        <h1 className="text-[22px] font-extrabold text-gray-700 dark:text-gray-300 tracking-[1px]">
+        <h1 className="text-[22px] font-extrabold text-gray-700 rounded-sm dark:text-gray-300 tracking-[1px]">
           Educational qualifications
         </h1>
-        <div className="mt-8">
-          <ul className=" list-decimal ml-6 space-y-1">
-            <li className="space-y-1 dark:text-gray-200  ">
-              <h1 className="sm:text-[17px] text-[16px] font-semibold text-gray-700 dark:text-gray-300 tracking-[1px]">
-                Moulvibazar Polytechnic Institute
-              </h1>
-            </li>
-            <li className="space-y-1 dark:text-gray-200  ">
-              <h1 className="sm:text-[17px] text-[16px] font-semibold text-gray-700 dark:text-gray-300 tracking-[1px]">
-                Computer science and technology(cst) 2020-2024
-              </h1>
-            </li>
-          </ul>
+        <div className="mt-7">
+          <div className="bg-gray-50 dark:bg-gray-800 p-4 sm:p-6  space-y-4">
+            <div>
+              <h2 className="text-[17px] sm:text-[18px] font-bold text-gray-800 dark:text-gray-200 tracking-wide">
+                🎓 Moulvibazar Polytechnic Institute
+              </h2>
+              <p className="text-[15px] sm:text-[16px] text-gray-600 dark:text-gray-300">
+                Department of Computer Science & Technology (CST)
+              </p>
+            </div>
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between text-[15px] sm:text-[16px] text-gray-600 dark:text-gray-300">
+              <p>
+                <span className="font-semibold">Year of Completion:</span> 2024
+              </p>
+              <p>
+                <span className="font-semibold">CGPA:</span> 3.53
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
