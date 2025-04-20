@@ -29,8 +29,8 @@ const OtherSkill = () => {
                 <h2 className="py-1 px-2 rounded-sm bg-[#1abc9c] text-white text-xs">
                   {skil?.technology}
                 </h2>
-                <p className="text-[10px] bg-[#e67e22] text-white font-semibold absolute p-[4px] -right-5  sm:-right-8 rounded-md -top-7 sm:-top-6">
-                  {skil?.percent}%
+                <p className="text-[10px] bg-[#e67e22] text-white font-semibold absolute p-[4px] -right-5  sm:-right-8 rounded-sm -top-7 sm:-top-6">
+                  {skil?.level}
                 </p>
               </div>
             </div>
