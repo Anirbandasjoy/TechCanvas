@@ -17,4 +17,5 @@ export const otherskillData = [
   { id: 1, technology: "Figma", percent: 40, level: "Beginner" },
   { id: 2, technology: "VsCode", percent: 80, level: "Expert" },
   { id: 3, technology: "Photoshop", percent: 20, level: "Beginner" },
+  { id: 4, technology: "Docker", percent: 60, level: "Intermediate" },
 ];
