@@ -1,6 +1,7 @@
 import { FaFacebook, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
-import bannerImage from "../../../assets/anirban-a35639a7.jpg";
+import bannerImage from "../../../assets/hellodev.jpeg";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 const Banner = () => {
   return (
     <div className="mt-10">
@@ -24,11 +25,18 @@ const Banner = () => {
               code.
             </h3>
           </div>
-          <div className="">
-            <img
+          <div className="flex justify-center items-center cursor-pointer">
+            <motion.img
               src={bannerImage}
               alt="bannerImage"
-              className="w-36  rounded-md "
+              className="w-44 bg-white dark:bg-gray-700 p-2 rounded-full shadow-lg"
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              whileHover={{
+                scale: 1.1,
+                transition: { duration: 0.3, ease: "easeInOut" },
+              }}
             />
           </div>
         </div>
